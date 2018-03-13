@@ -4,8 +4,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -14,12 +12,12 @@ import io.appium.java_client.remote.MobileCapabilityType;
 /**
  * Android Browser Local Test.
  */
-public class AndoridBrowserLocalTest 
+public class AndoridBrowserLocalTest extends BaseTest 
 {
 	public static AndroidDriver<?> mobiledriver;
 
-	@BeforeTest
-	public void beforeTest( ) throws MalformedURLException
+	@Test
+	public void launchBrowser() throws MalformedURLException
 	{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.7.2");
@@ -30,17 +28,8 @@ public class AndoridBrowserLocalTest
 		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Browser");
 		capabilities.setCapability("newCommandTimeout", 2000);
 		mobiledriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-	}
-
-	@Test
-	public static void launchBrowser() throws InterruptedException
-	{
 		mobiledriver.get("http://www.google.com/");
-	}
 
-	@AfterTest
-	public void afterTest()
-	{
 		mobiledriver.quit();
 	}
 }

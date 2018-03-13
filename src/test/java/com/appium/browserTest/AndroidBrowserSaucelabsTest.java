@@ -1,19 +1,18 @@
 package com.appium.browserTest;
 
-import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 /**
  * Android Browser Sauce Labs Test.
  */
-public class AndroidBrowserSaucelabsTest 
+public class AndroidBrowserSaucelabsTest extends BaseTest 
 {
 	public static AndroidDriver<?> mobiledriver;
 
@@ -22,8 +21,8 @@ public class AndroidBrowserSaucelabsTest
 	public static final String URL = "https://"+USERNAME+":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
 
 
-	@BeforeTest
-	public void beforeTest( ) throws MalformedURLException
+	@Test
+	public static void launchBrowser() throws InterruptedException, MalformedURLException
 	{
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.7.2");
@@ -34,17 +33,8 @@ public class AndroidBrowserSaucelabsTest
 		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Browser");
 		capabilities.setCapability("newCommandTimeout", 2000);
 		mobiledriver = new AndroidDriver<>(new URL(URL), capabilities);
-	}
-
-	@Test
-	public static void launchBrowser() throws InterruptedException
-	{
 		mobiledriver.get("http://www.google.com/");
-	}
-
-	@AfterTest
-	public void afterTest()
-	{
+		
 		mobiledriver.quit();
 	}
 }
