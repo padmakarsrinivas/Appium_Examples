@@ -1,5 +1,5 @@
 # Appium-Examples
----------
+
 ## Appium Browser Example 
 Tests to help launch browser on IOS and Android devices. 
 Also Example code to launch browser tests in Sauce Labs. 
@@ -10,7 +10,7 @@ In these test we are launching browser on the device/simulator and navigating to
   ### Saucelabs Brower Tests
   3. AndroidBrowserSaucelabsTest
   4. IOSBrowserSaucelabsTest
---------------------------------------
+
 ## Appium Examples
 Tests to help launch native apps on IOS and Android devices. 
 Also Example code to launch App tests in Sauce Labs. 
