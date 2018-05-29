@@ -17,6 +17,6 @@ Also Example code to launch App tests in Sauce Labs.
 In these test we are launching App on the device/simulator and run tests.
   ### IOS Native App Tests
   1. IOSNativeAppTest
-  ## Android Native App Tests
+  ### Android Native App Tests
   1. AndroidNativeAppTest
   2. AndroidParallelTest
