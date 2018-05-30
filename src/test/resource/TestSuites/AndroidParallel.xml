@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AndroidParallelTests" verbose="1" parallel="tests"
+	thread-count="2">
+	<test name="Android native app test on Android device 1">
+		<parameter name="platform" value="Android 7.1.1" />
+		<parameter name="udid" value="emulator-5554" />
+		<parameter name="systemPort" value="8220" />
+		<classes>
+			<class name="com.appium.test.AndroidParallelTest" />
+		</classes>
+	</test>
+	<test name="Android native app test on Android device 2">
+		<parameter name="platform" value="Android 7.1.1" />
+		<parameter name="udid" value="emulator-5556" />
+		<parameter name="systemPort" value="8221" />
+		<classes>
+			<class name="com.appium.test.AndroidParallelTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,4 +1,4 @@
-package com.appium.browserTest;
+package com.appium.test;
 
 import org.testng.annotations.Test;
 

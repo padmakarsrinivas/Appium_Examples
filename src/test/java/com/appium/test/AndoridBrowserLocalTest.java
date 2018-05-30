@@ -1,4 +1,4 @@
-package com.appium.browserTest;
+package com.appium.test;
 
 import java.net.MalformedURLException;
 import org.testng.annotations.Test;

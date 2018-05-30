@@ -8,8 +8,8 @@ In these test we are launching browser on the device/simulator and navigating to
   1. AndoridBrowserLocalTest
   2. IOSBrowserLocalTest
   ### Saucelabs Brower Tests
-  3. AndroidBrowserSaucelabsTest
-  4. IOSBrowserSaucelabsTest
+  1. AndroidBrowserSaucelabsTest
+  2. IOSBrowserSaucelabsTest
 
 ## Appium Examples
 Tests to help launch native apps on IOS and Android devices. 
