@@ -15,6 +15,7 @@ Sample code to help perform tests on native apps on both IOS and Android devices
 In these test we are launching native apps on the device/simulator and performing tests.
   ### IOS Native App Tests
   1. IOSNativeAppTest
+  2. IOSNativeParallelTest
   ### Android Native App Tests
   1. AndroidNativeAppTest
   2. AndroidParallelTest
