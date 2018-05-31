@@ -1,8 +1,7 @@
 # Appium-Examples
 
 ## Appium Browser Example 
-Tests to help launch browser on IOS and Android devices. 
-Also Example code to launch browser tests in Sauce Labs. 
+Sample code to help perform browser tests on IOS and Android Local devices and on Saucelabs. 
 In these test we are launching browser on the device/simulator and navigating to a url.
   ### Local Broswer Tests
   1. AndoridBrowserLocalTest
@@ -12,9 +11,8 @@ In these test we are launching browser on the device/simulator and navigating to
   2. IOSBrowserSaucelabsTest
 
 ## Appium Examples
-Tests to help launch native apps on IOS and Android devices. 
-Also Example code to launch App tests in Sauce Labs. 
-In these test we are launching App on the device/simulator and run tests.
+Sample code to help perform tests on native apps on both IOS and Android devices. 
+In these test we are launching native apps on the device/simulator and performing tests.
   ### IOS Native App Tests
   1. IOSNativeAppTest
   ### Android Native App Tests
