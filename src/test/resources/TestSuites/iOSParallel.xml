@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="IOSNativeSuite" verbose="1" parallel="tests"
+	thread-count="2">
+	<test name="Parallel test on Device 1 (iPhone 7)">
+		<parameter name="platform" value="iOS 11.3" />
+		<parameter name="udid"
+			value="4EF90429-528B-4E23-8343-1499DFC49B11" />
+		<parameter name="deviceName" value="iPhone 7" />
+		<parameter name="wdaLocalPort" value="8100" />
+		<classes>
+			<class name="com.appium.test.IOSNativeParallelTest" />
+		</classes>
+	</test>
+	<test name="Parallel test on Device 2 (iPhone 6)">
+		<parameter name="platform" value="iOS 11.3" />
+		<parameter name="udid"
+			value="2E013F55-C188-40B3-827A-8302B0083A8B" />
+		<parameter name="deviceName" value="iPhone 6" />
+		<parameter name="wdaLocalPort" value="8101" />
+		<classes>
+			<class name="com.appium.test.IOSNativeParallelTest" />
+		</classes>
+	</test>
+</suite>
