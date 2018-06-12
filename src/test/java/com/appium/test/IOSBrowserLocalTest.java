@@ -3,12 +3,12 @@ package com.appium.test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.appium.base.IOSLocalBaseTest;
+import com.appium.base.IOSBrowseLocalBaseTest;
 
 /**
  *  IOS Browser Local Test. 
  */
-public class IOSBrowserLocalTest extends IOSLocalBaseTest{
+public class IOSBrowserLocalTest extends IOSBrowseLocalBaseTest{
   @Test
   public static void launchBrowser(){
     mobiledriver.get("http://appium.io/");

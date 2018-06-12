@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.appium.base.AndroidNativeBaseTest;
 
 /**
- * Android Browser Local Test.
+ * Android Native Local Test.
  */
 public class AndroidNativeAppTest extends AndroidNativeBaseTest{
   @Test

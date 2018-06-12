@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeTest;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class IOSLocalBaseTest {
+public class IOSBrowseLocalBaseTest {
 
 	public static IOSDriver<?> mobiledriver;
 

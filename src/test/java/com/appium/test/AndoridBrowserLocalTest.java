@@ -5,12 +5,12 @@ import java.net.MalformedURLException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.appium.base.AndroidLocalBaseTest;
+import com.appium.base.AndroidBrowserLocalBaseTest;
 
 /**
  * Android Browser Local Test.
  */
-public class AndoridBrowserLocalTest extends AndroidLocalBaseTest{
+public class AndoridBrowserLocalTest extends AndroidBrowserLocalBaseTest{
   @Test
   public void launchBrowser() throws MalformedURLException {
     mobiledriver.get("http://appium.io/");

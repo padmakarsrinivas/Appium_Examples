@@ -3,14 +3,14 @@ package com.appium.test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.appium.base.AndroidParallelBaseTest;
+import com.appium.base.AndroidNativeParallelBaseTest;
 
 /**
- * Android Parallel Test.
+ * Android Native Application Parallel Test.
  */
-public class AndroidNativeParallelTest extends AndroidParallelBaseTest {
+public class AndroidNativeParallelTest extends AndroidNativeParallelBaseTest {
   @Test
-  public void nativeAppTest() throws InterruptedException {
+  public void nativeAppTest(){
     mobiledriver.findElementById("com.android.calculator2:id/digit_2").click();
     mobiledriver.findElementByAccessibilityId("plus").click();
     mobiledriver.findElementById("com.android.calculator2:id/digit_8").click();

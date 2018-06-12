@@ -3,20 +3,20 @@ package com.appium.test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.appium.base.IOSParallelBaseTest;
+import com.appium.base.IOSNativeParallelBaseTest;
 
-import io.appium.java_client.ios.IOSElement;
-
-public class IOSNativeParallelTest extends  IOSParallelBaseTest{
+/**
+ * IOS Native Application Parallel Test.
+ */
+public class IOSNativeParallelTest extends  IOSNativeParallelBaseTest{
 
   @Test
   public static void appTest(){
-
-    IOSElement buttons = (IOSElement) mobiledriver.findElementByXPath("//XCUIElementTypeStaticText[@name='Buttons']");
-
-    buttons.click();
-    IOSElement title = (IOSElement)mobiledriver.findElementByXPath("//XCUIElementTypeNavigationBar[@name='Buttons']");
-   
-    Assert.assertEquals(title.getAttribute("name"), "Buttons", "Header Mismatch");
+    mobiledriver.findElementById("2").click();
+    mobiledriver.findElementByAccessibilityId("add").click();
+    mobiledriver.findElementById("8").click();
+    mobiledriver.findElementByAccessibilityId("equals").click();
+    String results=mobiledriver.findElementById("Result").getText();
+    Assert.assertEquals(results, "10", "Result Mismatch");
   }
 }

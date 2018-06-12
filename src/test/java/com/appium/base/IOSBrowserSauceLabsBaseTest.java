@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeTest;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class IOSSauceLabsBaseTest {
+public class IOSBrowserSauceLabsBaseTest {
 
 	public static final String USERNAME = "YOUR_USERNAME";
 	public static final String ACCESS_KEY = "YOUR_ACESS_KEY";
