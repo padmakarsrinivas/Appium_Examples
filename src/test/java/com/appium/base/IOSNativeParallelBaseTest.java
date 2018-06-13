@@ -23,10 +23,10 @@ public class IOSNativeParallelBaseTest {
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,platformInfo[0]);
     capabilities.setCapability(MobileCapabilityType.UDID, udid);
     capabilities.setCapability("wdaLocalPort", wdaLocalPort);
-    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"XCUITest");
-    capabilities.setCapability("xcodeOrgId", "GY84S9P9XS");
+    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"XCUITest");    
+    capabilities.setCapability("xcodeOrgId", "YOUR_ORG_ID");
     capabilities.setCapability("xcodeSigningId", "iPhone Developer");
-    capabilities.setCapability("bundleId", "com.apple.calculator");
+    capabilities.setCapability("udid", "DEVICE_UDID");
     capabilities.setCapability("newCommandTimeout", 2000);
     mobiledriver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
   }

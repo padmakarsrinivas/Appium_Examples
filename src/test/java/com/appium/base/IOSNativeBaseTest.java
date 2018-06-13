@@ -20,9 +20,9 @@ public class IOSNativeBaseTest {
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"iOS");
     capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"XCUITest");
     capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 7");
-    capabilities.setCapability("xcodeOrgId", "GY84S9P9XS");
+    capabilities.setCapability("xcodeOrgId", "YOUR_ORG_ID");
     capabilities.setCapability("xcodeSigningId", "iPhone Developer");
-    capabilities.setCapability("udid", "c91a04bd5576b4292a7bbb35d6a89b654abe4f4c");
+    capabilities.setCapability("udid", "DEVICE_UDID");
     capabilities.setCapability("bundleId", "com.apple.calculator");
     capabilities.setCapability("newCommandTimeout", 2000);
     mobiledriver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
