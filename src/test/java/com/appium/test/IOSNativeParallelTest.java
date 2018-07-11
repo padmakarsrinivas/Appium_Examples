@@ -24,7 +24,6 @@ public class IOSNativeParallelTest extends  BaseTest{
   public void beforeTest(String platform, String udid, String deviceName, String wdaLocalPort) throws MalformedURLException {
     String[] platformInfo = platform.split(" ");
     DesiredCapabilities capabilities = new DesiredCapabilities();
-    capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.8.1");
     capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platformInfo[1]);
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,platformInfo[0]);
     capabilities.setCapability(MobileCapabilityType.UDID, udid);

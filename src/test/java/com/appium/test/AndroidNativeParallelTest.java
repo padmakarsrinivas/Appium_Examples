@@ -25,7 +25,6 @@ public class AndroidNativeParallelTest extends BaseTest {
   public void beforeTest(String Platform, String udid, String systemPort ) throws MalformedURLException {
     String[] platformInfo = Platform.split(" ");
     DesiredCapabilities capabilities = new DesiredCapabilities();
-    capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.8.0");
     capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, platformInfo[1]);
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,platformInfo[0]);
     capabilities.setCapability(MobileCapabilityType.UDID, udid);

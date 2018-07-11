@@ -21,7 +21,6 @@ public class AndroidNativeAppTest extends BaseTest{
   @BeforeTest
   public void beforeTest( ) throws MalformedURLException {
     DesiredCapabilities capabilities = new DesiredCapabilities();
-    capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.7.2");
     capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
     capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
