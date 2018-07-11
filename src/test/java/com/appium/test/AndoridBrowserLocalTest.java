@@ -2,15 +2,40 @@ package com.appium.test;
 
 import java.net.MalformedURLException;
 
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.appium.base.AndroidBrowserLocalBaseTest;
+import com.appium.base.BaseTest;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 /**
  * Android Browser Local Test.
  */
-public class AndoridBrowserLocalTest extends AndroidBrowserLocalBaseTest{
+public class AndoridBrowserLocalTest extends BaseTest{
+  public static AndroidDriver<?> mobiledriver;
+  @BeforeTest
+  public void beforeTest( ) throws MalformedURLException 
+  {
+    DesiredCapabilities capabilities = new DesiredCapabilities();
+    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "4.4");
+    capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"Appium");
+    capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung Galaxy S4 Emulator");
+    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Browser");
+    capabilities.setCapability("newCommandTimeout", 2000);
+    mobiledriver = new AndroidDriver<>(getServiceUrl (), capabilities);
+  }
+
+  @AfterTest
+  public void afterTest( ) 
+  {
+    mobiledriver.quit();
+  }
   @Test
   public void launchBrowser() throws MalformedURLException {
     mobiledriver.get("http://appium.io/");
