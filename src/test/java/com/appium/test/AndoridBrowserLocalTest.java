@@ -22,11 +22,11 @@ public class AndoridBrowserLocalTest extends BaseTest{
   public void beforeTest( ) throws MalformedURLException 
   {
     DesiredCapabilities capabilities = new DesiredCapabilities();
-    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "4.4");
+    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1.0");
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
+    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator");
     capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung Galaxy S4 Emulator");
-    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Browser");
+    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
     capabilities.setCapability("newCommandTimeout", 2000);
     mobiledriver = new AndroidDriver<>(getServiceUrl (), capabilities);
   }

@@ -31,7 +31,7 @@ public class AndroidBrowserSaucelabsTest extends BaseTest {
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
     capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
     capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung Galaxy S4 Emulator");
-    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Browser");
+    capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
     capabilities.setCapability("newCommandTimeout", 2000);
     mobiledriver = new AndroidDriver<>(new URL(URL), capabilities);
   }
