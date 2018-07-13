@@ -3,7 +3,7 @@
 <suite name="TestNG Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.appium.test.IOSBrowserLocalTest" />
+			<class name="com.appium.test.AndroidBrowserLocalTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

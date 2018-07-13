@@ -16,7 +16,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 /**
  * Android Browser Local Test.
  */
-public class AndoridBrowserLocalTest extends BaseTest{
+public class AndroidBrowserLocalTest extends BaseTest{
   public static AndroidDriver<?> mobiledriver;
   @BeforeTest
   public void beforeTest( ) throws MalformedURLException 
@@ -24,7 +24,7 @@ public class AndoridBrowserLocalTest extends BaseTest{
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1.0");
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator");
+    capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
     capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung Galaxy S4 Emulator");
     capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
     capabilities.setCapability("newCommandTimeout", 2000);
