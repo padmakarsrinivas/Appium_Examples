@@ -1,6 +1,6 @@
 # Appium-Examples
 
-## Appium Browser Example 
+## Browser Automation Example 
 Sample code to help perform browser tests on IOS and Android Local devices and on Saucelabs. 
 In these test we are launching browser on the device/simulator and navigating to a url.
   ### Local Broswer Tests
@@ -10,7 +10,7 @@ In these test we are launching browser on the device/simulator and navigating to
   1. AndroidBrowserSaucelabsTest
   2. IOSBrowserSaucelabsTest
 
-## Appium Examples
+## Native Application Automation Examples
 Sample code to help perform tests on native apps on both IOS and Android devices. 
 In these test we are launching native apps on the device/simulator and performing tests.
   ### IOS Native App Tests
