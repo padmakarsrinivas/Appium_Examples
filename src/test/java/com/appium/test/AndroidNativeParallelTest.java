@@ -41,6 +41,7 @@ public class AndroidNativeParallelTest extends BaseTest {
   public void afterTest( ) {
     mobiledriver.quit();
   }
+  
   @Test
   public void nativeAppTest(){
     mobiledriver.findElementById("com.android.calculator2:id/digit_2").click();

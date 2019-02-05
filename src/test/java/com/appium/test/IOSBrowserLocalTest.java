@@ -20,10 +20,9 @@ public class IOSBrowserLocalTest extends BaseTest{
   public static IOSDriver<?> mobiledriver;
 
   @BeforeTest
-  public void beforeTest( ) throws MalformedURLException 
-  {
+  public void beforeTest( ) throws MalformedURLException {
     DesiredCapabilities capabilities = new DesiredCapabilities();
-    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.4");
+    capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12.1");
     capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"iOS");
     capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"XCUITest");
     capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 7");
@@ -33,8 +32,7 @@ public class IOSBrowserLocalTest extends BaseTest{
   }
 
   @AfterTest
-  public void afterTest( ) 
-  {
+  public void afterTest(){
     mobiledriver.quit();
   }
 

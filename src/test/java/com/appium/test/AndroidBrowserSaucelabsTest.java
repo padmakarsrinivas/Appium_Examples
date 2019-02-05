@@ -9,15 +9,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.appium.base.BaseTest;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 /**
  * Android Browser Sauce Labs Test.
  */
-public class AndroidBrowserSaucelabsTest extends BaseTest{
+public class AndroidBrowserSaucelabsTest{
   public static final String USERNAME = "YOUR_USERNAME";
   public static final String ACCESS_KEY = "YOUR_ACCESS_KEY";
   public static final String URL = "https://"+USERNAME+":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
