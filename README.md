@@ -1,4 +1,4 @@
-# Appium-Examples
+# Appium Examples
 
 ## Browser Automation Example 
 Sample code to help perform browser tests on IOS and Android Local devices and on Saucelabs. 
